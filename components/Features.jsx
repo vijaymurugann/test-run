@@ -57,7 +57,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="w-screen my-32 px-4">
+    <section className="w-screen mt-32 px-4">
       <div className="max-w-7xl mx-auto py-[76px] px-[50px] features-gradient border border-white/15">
         <h3 className="text-[56px] leading-[3.8rem]">
           Elevate your <br /> SEO efforts.
