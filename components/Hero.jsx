@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className="hero-title hero-text-animate hero-gradient-text mb-6">
           Boost your <br /> rankings with AI.
         </h1>
-        <p className="text-lg md:text-xl text-white mb-8 max-w-2xl hero-text-animate">
+        <p className="text-lg md:text-xl text-white mb-6 max-w-2xl hero-text-animate">
           Elevate your site's visibility effortlessly with AI, where <br />
           smart technology meets user-friendly SEO tools.
         </p>
@@ -41,6 +41,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="absolute bottom-0 w-full h-[20rem] bg-gradient-to-t from-black to-transparent" />
     </section>
   );
 };
