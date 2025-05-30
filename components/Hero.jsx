@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative hero-section flex flex-col items-center justify-center min-h-screen px-4">
+    <section className="relative hero-section flex flex-col items-center justify-center min-h-screen px-4 overflow-hidden">
       <div className="bg-glow absolute w-[1000px] h-[1000px]">
         <Image
           src="/images/circles.png"
