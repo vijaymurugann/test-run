@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Boost your rankings with AI",
+  title: "TestRun AI | Boost your rankings with AI",
   description:"Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.",
 };
 
