@@ -77,6 +77,10 @@ body {
   );
 }
 
+.features-gradient {
+  background: linear-gradient(107.08deg, #190D2E 0.54%, #020103 99.46%);
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
