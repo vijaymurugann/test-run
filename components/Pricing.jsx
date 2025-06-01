@@ -94,12 +94,17 @@ const Pricing = () => {
     <section className="w-screen px-4 max-w-7xl mx-auto flex flex-col items-center justify-center">
       <div className=" mx-auto py-[76px] px-[50px] text-center">
         <h3 className="mb-4 text-white text-[56px] font-medium">Pricing</h3>
-        <p className="max-w-[500px] text-white text-[20px] font-normal">
+        <p className="hidden md:block max-w-[500px] text-white md:text-[20px] font-normal">
           Choose the right plan to meet your SEO <br /> needs and start
           optimizing today.
         </p>
+
+        <p className=" block md:hidden max-w-[500px] text-white font-normal">
+          Choose the right plan to meet your SEO needs and start
+          optimizing today.
+        </p>
       </div>
-      <div className="pricing flex gap-4 max-w-5xl w-full">
+      <div className="pricing flex flex-col md:flex-row gap-4 max-w-5xl w-full">
         {pricingPlans.map((plan, idx) => (
           <PricingCard key={idx} plan={plan} />
         ))}

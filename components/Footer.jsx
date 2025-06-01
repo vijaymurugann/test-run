@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <footer className="w-screen mt-20 bg-black border-white/15 border-t-1 text-white">
       <div className="max-w-7xl mx-auto px-8 pt-10 pb-4 flex flex-col min-h-[350px] justify-between h-full">
-        <div className="flex justify-between w-full gap-8 ">
+        <div className="flex flex-col md:flex-row justify-between w-full gap-8 ">
           {/* Logo and socials */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-row md:flex-col justify-between">
             <div className="flex flex-col gap-8 min-w-[200px]">
               <div className="flex items-center gap-3">
                 <Image
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Social icons */}
-            <div className="flex items-center gap-8 mt-12 mb-2">
+            <div className="flex items-center gap-2 md:gap-8 md:mt-12 md:mb-2">
               <a href="#" aria-label="X">
                 <Image src="/icons/x-logo.svg" alt="X" width={28} height={28} />
               </a>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-items-start">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-8 justify-items-start">
             {footerLinks.map((col, idx) => (
               <ul key={idx} className="flex flex-col gap-3 min-w-[120px]">
                 <li>

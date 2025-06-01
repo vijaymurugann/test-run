@@ -5,7 +5,7 @@ const Bento = () => {
   return (
     <section className="max-w-7xl mx-auto my-32 px-4">
       <div className="max-w-xl mb-12 mx-auto text-center">
-        <h3 className="text-white text-4xl font-medium">
+        <h3 className="text-white text-2xl md:text-4xl font-medium">
           Harness the power of AI, making search engine optimization intuitive
           and effective for all skill levels.
         </h3>

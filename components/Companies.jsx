@@ -21,7 +21,7 @@ const Companies = () => {
         {companies.map((company) => (
           <div
             key={company.logo}
-            className=" border-1 border-white/15 rounded-[10px] min-w-[220px]  max-w-xs flex items-center gap-4 px-8 m-2 ">
+            className=" border-1 border-white/15 rounded-[10px] md:min-w-[220px]   max-w-xs flex items-center gap-4 px-8 m-2 ">
             <img
               src={company.logo}
               alt="Company logo"

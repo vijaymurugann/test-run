@@ -8,7 +8,7 @@ const SecondaryButton = ({ text }) => {
         backdropFilter: "blur(14px)",
       }}>
       <a
-        className="primary-button-inner rounded-[8px] border border-white/15 px-[15px] py-[5px] flex gap-[10px] hover:px-[21px] hover:py-[11px] hover:rounded-[12px] transition-all duration-300"
+        className="w-full text-center rounded-[8px] border border-white/15 px-[15px] py-[5px] hover:px-[21px] hover:py-[11px] hover:rounded-[12px] transition-all duration-300"
         style={{
           color: "#000000",
           background: "#ffffff",

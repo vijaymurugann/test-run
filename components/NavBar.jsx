@@ -136,7 +136,7 @@ const NavBar = () => {
       className={`w-full text-[#FFFFFF99] border-b border-white/15 bg-black/95 fixed top-0 left-0 z-50 p-1 transition-transform duration-300 ${
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-16 justify-center gap-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-16 justify-between md:justify-around">
         {/* Logo */}
         <a href="/" className="flex items-center">
           <Image
@@ -163,25 +163,29 @@ const NavBar = () => {
             )
           )}
         </div>
-        {/* Join Waitlist Button */}
-        <PrimaryButton text="Join waitlist" />
-        {/* Burger Menu (Mobile) */}
-        <button
-          className="md:hidden flex items-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Open menu">
-          <Image
-            src="/icons/burger-menu.svg"
-            alt="Menu"
-            width={32}
-            height={32}
-          />
-        </button>
+        <div className="flex">
+          {/* Join Waitlist Button */}
+          <div className="">
+            <PrimaryButton text="Join waitlist" />
+          </div>
+          {/* Burger Menu (Mobile) */}
+          <button
+            className="md:hidden flex items-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Open menu">
+            <Image
+              src="/icons/burger-menu.svg"
+              alt="Menu"
+              width={32}
+              height={32}
+            />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-full bg-black/95 z-40 transition-transform duration-300 ${
+        className={`hidden md:hidden fixed top-0 left-0 w-full h-full bg-black/95 z-40 transition-transform duration-300 ${
           mobileOpen ? "translate-y-0" : "-translate-y-full"
         }`}
         style={{ backdropFilter: "blur(4px)" }}>

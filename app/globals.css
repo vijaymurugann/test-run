@@ -27,11 +27,7 @@ body {
 
 .hero-title {
   font-family: Inter;
-  font-weight: 500;
-  font-size: 82px;
-  line-height: 84px;
   letter-spacing: -5.06%;
-  text-align: center;
 }
 
 /* Hero section animations and effects */
@@ -57,7 +53,7 @@ body {
   box-shadow: 0px -19px 70px 0px rgba(140, 69, 255, 0.4);
 }
 
-.bg-glow {
+.hero-gradient {
   background: radial-gradient(
     circle,
     rgba(98, 42, 154, 1) 0%,
@@ -67,6 +63,12 @@ body {
   backdrop-filter: blur(224px);
   z-index: -1;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-gradient {
+    display: none;
+  }
 }
 
 .bento-gradient {

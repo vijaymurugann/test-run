@@ -6,23 +6,26 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative hero-section flex flex-col items-center justify-center min-h-screen px-4 overflow-hidden">
-      <div className="bg-glow absolute w-[1000px] h-[1000px]">
+      <div className="hero-gradient absolute w-[1000px] h-[1000px] -z-10">
         <Image
           src="/images/circles.png"
           alt="Hero circles"
           width={1000}
           height={1000}
         />
-        <div className=""></div>
       </div>
 
       <div className="hero-content mt-40 mb-12 flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
         <Badge />
 
-        <h1 className="hero-title hero-text-animate hero-gradient-text mb-6">
+        <h1 className="hero-title font-medium leading-[48px] md:leading-[82px] text-[42px] md:text-[82px] hero-text-animate hero-gradient-text mb-6">
           Boost your <br /> rankings with AI.
         </h1>
-        <p className="text-lg md:text-xl text-white mb-6 max-w-2xl hero-text-animate">
+        <p className="block md:hidden text-lg text-white mb-6 max-w-2xl hero-text-animate">
+          Elevate your site's visibility effortlessly with AI, where smart
+          technology meets user-friendly SEO tools.
+        </p>
+        <p className="hidden md:block text-xl text-white mb-6 max-w-2xl hero-text-animate">
           Elevate your site's visibility effortlessly with AI, where <br />
           smart technology meets user-friendly SEO tools.
         </p>

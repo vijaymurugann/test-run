@@ -57,16 +57,17 @@ const Features = () => {
   ];
 
   return (
-    <section className="w-screen mt-32 px-4">
+    <section className="w-screen mt-32">
       <div className="max-w-7xl mx-auto py-[76px] px-[50px] features-gradient border border-white/15">
-        <h3 className="text-[56px] leading-[3.8rem]">
+        <h3 className="hidden md:block text-[56px] leading-[3.8rem]">
           Elevate your <br /> SEO efforts.
+        </h3>
+        <h3 className="block md:hidden text-2xl md:text-[56px] leading-[3.8rem]">
+          Elevate your SEO efforts.
         </h3>
         <div className="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-12">
           {features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col min-h-[125px]">
+            <div key={idx} className="flex flex-col min-h-[125px]">
               <div className="flex items-center gap-1">
                 <Image
                   src={feature.icon}
@@ -77,7 +78,9 @@ const Features = () => {
                 />{" "}
                 <h4 className="inline font-medium mb-1">{feature.title}</h4>
               </div>
-              <p className="text-white/70 font-normal max-w-[300px]">{feature.description}</p>
+              <p className="text-white/70 font-normal max-w-[300px]">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

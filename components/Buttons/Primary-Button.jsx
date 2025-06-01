@@ -8,7 +8,7 @@ const PrimaryButton = ({ text }) => {
         backdropFilter: "blur(14px)",
       }}>
       <a
-        className="primary-button-inner w-full  rounded-[8px] border border-white/15 px-[15px] py-[2px] hover:px-[21px] hover:py-[6px] hover:rounded-[12px] transition-all duration-300"
+        className="w-full  rounded-[8px] border border-white/15 px-[15px] py-[2px] hover:px-[21px] hover:py-[6px] hover:rounded-[12px] transition-all duration-300"
         style={{
           background: "#8C45FF66",
           boxShadow: "0px 0px 6px 3px #FFFFFF40 inset",
