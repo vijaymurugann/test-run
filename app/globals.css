@@ -111,6 +111,14 @@ body {
   );
 }
 
+.pricing-gradient {
+  background: linear-gradient(180deg, #010002 0%, #361764 100%);
+}
+
+.pricing-card-shadow {
+  box-shadow: 0px 10px 74px 10px rgba(78, 0, 191, 0.41);
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
