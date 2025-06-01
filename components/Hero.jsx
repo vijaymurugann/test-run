@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="hero-image hero-img-animate flex items-center justify-center rounded-[10px] overflow-hidden">
         <div className="hero-image-inner p-2 bg-white/10 border border-white/15">
           <Image
-            src="/hero-img-app-screen.png"
+            src="/images/hero-img-app-screen.png"
             alt="Hero Image"
             width={1000}
             height={1000}
