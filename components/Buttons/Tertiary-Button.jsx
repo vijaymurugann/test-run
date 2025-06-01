@@ -9,11 +9,11 @@ const TertiaryButton = ({ text , active}) => {
         background: "#3D3D3D66",
         boxShadow: "0px 0px 6px 3px #FFFFFF40 inset",
       }}>
-      <a
+      <div
         className={`w-full py-[6px] rounded-[12px] transition-all duration-300 ${active && "bg-[#8c45ff92]"}  hover:bg-[#8c45ff92]`}
         style={{}}>
         {text}
-      </a>
+      </div>
     </a>
   );
 };
