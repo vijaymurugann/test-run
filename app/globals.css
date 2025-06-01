@@ -17,7 +17,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hero gradient text effect */
+/* Hero section */
+
 .hero-gradient-text {
   background: linear-gradient(180deg, #ffffff 54.17%, #b372cf 100%);
   -webkit-background-clip: text;
@@ -30,7 +31,6 @@ body {
   letter-spacing: -5.06%;
 }
 
-/* Hero section animations and effects */
 .hero-text-animate {
   animation: fadeInUp 1s ease-out;
 }
@@ -71,6 +71,7 @@ body {
   }
 }
 
+/* Bento section */
 .bento-gradient {
   background: linear-gradient(
     179.77deg,
@@ -79,10 +80,12 @@ body {
   );
 }
 
+/* Features section */
 .features-gradient {
   background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
 }
 
+/* Client section */
 .line-gradient {
   background: linear-gradient(
     90deg,
@@ -113,6 +116,7 @@ body {
   );
 }
 
+/* Pricing section */
 .pricing-gradient {
   background: linear-gradient(180deg, #010002 0%, #361764 100%);
 }
@@ -121,6 +125,7 @@ body {
   box-shadow: 0px 10px 74px 10px rgba(78, 0, 191, 0.41);
 }
 
+/* CTA section */
 .cta-gradient {
   background: radial-gradient(
     circle at top,
@@ -129,6 +134,7 @@ body {
   );
 }
 
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
