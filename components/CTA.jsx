@@ -5,7 +5,7 @@ import Image from "next/image";
 const CTA = () => {
   return (
     <section className="m-0 mt-6 md:m-10  overflow-hidden">
-      <div className="relative max-w-6xl mx-auto flex flex-col items-center justify-center border border-white/15 p-4 md:p-10 cta-gradient overflow-hidden">
+      <div className="relative max-w-6xl mx-auto flex flex-col items-center justify-center border border-white/15 p-4 py-12 md:p-10 cta-gradient overflow-hidden">
         <Image
           src="/images/pattern-2.png"
           alt="cta-bg"
