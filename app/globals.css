@@ -78,7 +78,37 @@ body {
 }
 
 .features-gradient {
-  background: linear-gradient(107.08deg, #190D2E 0.54%, #020103 99.46%);
+  background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
+}
+
+.line-gradient {
+  background: linear-gradient(
+    90deg,
+    #141315 0%,
+    #ffffff 16.5%,
+    #eaeaea 86.5%,
+    #020103 100%
+  );
+  opacity: 0.6;
+}
+
+.line-gradient-vertical {
+  background: linear-gradient(
+    180deg,
+    #141315 0%,
+    #ffffff 16.5%,
+    #eaeaea 86.5%,
+    #020103 100%
+  );
+  opacity: 0.6;
+}
+
+.client-gradient {
+  background: radial-gradient(
+    circle at 36%,
+    rgba(140, 69, 255, 0.271) 0%,
+    rgba(140, 69, 255, 0) 40%
+  );
 }
 
 @keyframes fadeInUp {
